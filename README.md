@@ -1,10 +1,6 @@
 # Create new Rails Application
 
-``
-
-``docker run -it -v $PWD:/opt/app rails-toolbox rails new --skip-bundle hello-world-ruby``
-
-``
+````docker run -it -v $PWD:/opt/app rails-toolbox rails new --skip-bundle hello-world-ruby````
 
 > #### **Note Description!**
 >
