@@ -1,0 +1,18 @@
+# Dockerfile ruby for rails
+FROM ruby:3.2.0 AS rails-toolbox
+
+# Argument
+# ARG APP_NAME
+
+# Default directory
+# ENV APP_NAME ${APP_NAME}
+ENV INSTALL_PATH /opt/app
+RUN mkdir -p $INSTALL_PATH
+
+# Install rails
+RUN gem install rails bundler
+
+WORKDIR /opt/app
+
+# Run a shell
+CMD ["/bin/sh"]
